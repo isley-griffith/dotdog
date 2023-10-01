@@ -25,5 +25,6 @@ export const createLibrary = async ({ userId, token, library }) => {
   const { data: newLibrary, error } = await supabase
     .from("libraries")
     .insert([{ ...library, user_id: userId }]);
+  console.log(newLibrary)
   return newLibrary;
 };
