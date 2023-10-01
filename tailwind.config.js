@@ -8,10 +8,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'journal-regular': "/Journal.png",
+        'journal-black': "/JournalBlack.png",
+        'journal-colors': "/JournalColors.png",
       },
+      colors: {
+        action: "#007aff",
+        subtitle: "#818087",
+        "gray-l": "#323232",
+        "gray-d": "#282a2a"
+      }
     },
   },
   plugins: [],
